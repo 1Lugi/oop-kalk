@@ -1,4 +1,6 @@
-class kalkulaator:
+#githubi link https://github.com/1Lugi/oop-kalk
+
+#class kalkulaator:
     def __init__(self, a, b):
         self.a = a      #1 number
         self.b = b      #2 number
