@@ -1,7 +1,7 @@
 class kalkulaator:
     def __init__(self, a, b):
-        self.a = a      #esimene number
-        self.b = b      #teine number
+        self.a = a      #1 number
+        self.b = b      #2 number
 
     def liida(self):
         return self.a + self.b      #liitmine
@@ -58,14 +58,14 @@ def menu():
 
 
 #sisend
-a = float(input("sisesta esimene number: "))
-b = float(input("sisesta teine number: "))
+a = float(input("sisesta 1 number: "))
+b = float(input("sisesta 2 number: "))
 
 k = kalkulaator(a, b)
 
 while True:
     menu()
-    valik = int(input("sisesta valik: "))
+    valik = int(input("sisesta mingi valin: "))
 
     if valik == 1:
         print("vastus:", k.liida())
@@ -84,5 +84,5 @@ while True:
     elif valik == 8:
         print("vastus:", k.umarda())
     else:
-        print("vale valik, proovi uuesti")
+        print("vale, try again")
         continue
